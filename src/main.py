@@ -80,31 +80,31 @@ def generate_insights(metrics):
                     ),
                 },
             ],
-    # completion = client.chat.completions.create(
-    #                     model="gpt-4o-mini",
-    #                     messages=[
-    #             {
-    #                 "role": "system",
-    #                 "content": "You are an assistant generating insights from social media performance metrics.",
-    #             },
-    #             {
-    #                 "role": "user",
-    #                 "content": (
-    #                     f"Analyze the following social media engagement metrics:\n"
-    #                     f"Post Type: {metrics['post_type']}\n"
-    #                     f"Average Likes: {metrics['average_likes']}\n"
-    #                     f"Average Shares: {metrics['average_shares']}\n"
-    #                     f"Average Comments: {metrics['average_comments']}\n"
-    #                     f"Provide actionable insights based on the performance."
-    #                 ),
-    #             },
-    #         ],
-    #                 )
+    completion = client.chat.completions.create(
+                        model="gpt-4o-mini",
+                        messages=[
+                {
+                    "role": "system",
+                    "content": "You are an assistant generating insights from social media performance metrics.",
+                },
+                {
+                    "role": "user",
+                    "content": (
+                        f"Analyze the following social media engagement metrics:\n"
+                        f"Post Type: {metrics['post_type']}\n"
+                        f"Average Likes: {metrics['average_likes']}\n"
+                        f"Average Shares: {metrics['average_shares']}\n"
+                        f"Average Comments: {metrics['average_comments']}\n"
+                        f"Provide actionable insights based on the performance."
+                    ),
+                },
+            ],
+                    )
 
         # Access the response using dot notation
-    # insights = completion.choices[0].message
-    print(f"Prompt:\n\n\n",messages)
-    # print(f"\nGenerated Insights:\n{insights}")
+    insights = completion.choices[0].message
+    # print(f"Prompt:\n\n\n",messages)
+    print(f"\nGenerated Insights:\n{insights}")
     return messages
 
 

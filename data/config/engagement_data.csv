@@ -1,0 +1,6 @@
+post_id,post_type,likes,shares,comments
+1,carousel,150,20,30
+2,reels,300,50,100
+3,static,100,10,20
+4,reels,400,70,120
+5,carousel,200,30,40
