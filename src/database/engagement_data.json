@@ -1,0 +1,38 @@
+[
+    {
+      "post_id": 1,
+      "post_type": "carousel",
+      "likes": 150,
+      "shares": 20,
+      "comments": 30
+    },
+    {
+      "post_id": 2,
+      "post_type": "reels",
+      "likes": 300,
+      "shares": 50,
+      "comments": 100
+    },
+    {
+      "post_id": 3,
+      "post_type": "static",
+      "likes": 100,
+      "shares": 10,
+      "comments": 20
+    },
+    {
+      "post_id": 4,
+      "post_type": "reels",
+      "likes": 400,
+      "shares": 70,
+      "comments": 120
+    },
+    {
+      "post_id": 5,
+      "post_type": "carousel",
+      "likes": 200,
+      "shares": 30,
+      "comments": 40
+    }
+  ]
+  
